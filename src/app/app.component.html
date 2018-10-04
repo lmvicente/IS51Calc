@@ -1,20 +1,38 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<head>
+  <title>{{title}}</title>
+</head>
 
+<body>
+  <div class="main-container">
+    <header>
+      <h1>
+        This is our <span style=color:#6FB0E2>{{title}}!</span>
+      </h1>
+      <p>Welcome to our project! We designed a calculator. Knock yourself out!</p>
+    </header>
+
+    <div class="calc-top">
+      <p class="output" name="output">50</p>
+      <div class="keypad">
+          <button name="clear" class="opp-key" ng-click="clear()">C</button>
+          <button name="pos-neg" class="opp-key" ng-click="pos-neg()">+/-</button>
+          <button name="divide" class="opp-key" ng-click="math(/)">/</button>
+          <button name="multiply" class="opp-key" ng-click="math(*)">*</button>
+          <button name="seven" class="num-key" value = "7" ng-click="num(7)">7</button>
+          <button name="eight" class="num-key" value = "8" ng-click="num(8)">8</button>
+          <button name="nine" class="num-key" value = "9" ng-click="num(9)">9</button>
+          <button name="subtract" class="opp-key" ng-click="math(-)">-</button>
+          <button name="four" class="num-key" value = "4" ng-click="num(4)">4</button>
+          <button name="five" class="num-key" value = "5" ng-click="num(5)">5</button>
+          <button name="six" class="num-key" value = "6" ng-click="num(6)">6</button>
+          <button name="add" class="opp-key" ng-click="math(+)">+</button>
+          <button name="one" class="num-key" value = "1" ng-click="num(1)">1</button>
+          <button name="two" class="num-key" value = "2" ng-click="num(2)">2</button>
+          <button name="three" class="num-key" value = "3" ng-click="num(3)">3</button>
+          <button name="equals" class="equals-key" ng-click="math(=)">=</button>
+          <button name="zero" class="zero-key" value = "0" ng-click="num(0)">0</button>
+          <button name="dec" class="opp-key" ng-click="math(.)">.</button>
+      </div>
+    </div>
+  </div>
+</body>
