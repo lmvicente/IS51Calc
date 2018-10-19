@@ -12,8 +12,8 @@ export class AppComponent {
   title = 'IS51Calc';
 }
 
-const app = angular.module('myCalc', []);
-app.controller('calcCtrl', function ($scope) {
+// const app = angular.module('myCalc', []);
+// app.controller('calcCtrl', function ($scope) {
 
-});
+// });
 

@@ -1,44 +1,41 @@
-  <head>
-    <title>{{title}}</title>
-  </head>
+<head>
+  <title>{{title}}</title>
+</head>
 
-  <body ng-app="myCalc">
+<!-- <body ng-app="myCalc"> -->
 
-    <div ng-controller="calcCtrl">
-      <div class="main-container">
-        <header>
-          <h1>
-            This is our <span style=color:#6FB0E2>{{title}}!</span>
-          </h1>
-          <p>Welcome to our project! We designed a calculator. Knock yourself out!</p>
-        </header>
-        <br>
-        <br>
+<!-- <div ng-controller="calcCtrl"> -->
+<div class="main-container">
+  <header>
+    <h1>
+      This is our <span style=color:#6FB0E2>{{title}}!</span>
+    </h1>
+    <p>Welcome to our project! We designed a calculator. Knock yourself out!</p>
+  </header>
+  <br>
+  <br>
 
-        <div class="calc-top">
-          <p class="output" name="output">{{output}} {{operationSign}}</p>
-          <div class="keypad">
-            <button name="clear" class="opp-key" ng-click="clear()">C</button>
-            <button name="pos-neg" class="opp-key" ng-click="pos-neg()">+/-</button>
-            <button name="divide" class="opp-key" ng-click="math(/)">/</button>
-            <button name="multiply" class="opp-key" ng-click="math(*)">*</button>
-            <button name="seven" class="num-key" value="7" ng-click="updateOutput(7)">7</button>
-            <button name="eight" class="num-key" value="8" ng-click="updateOutput(8)">8</button>
-            <button name="nine" class="num-key" value="9" ng-click="updateOutput(9)">9</button>
-            <button name="subtract" class="opp-key" ng-click="math(-)">-</button>
-            <button name="four" class="num-key" value="4" ng-click="updateOutput(4)">4</button>
-            <button name="five" class="num-key" value="5" ng-click="updateOutput(5)">5</button>
-            <button name="six" class="num-key" value="6" ng-click="updateOutput(6)">6</button>
-            <button name="add" class="opp-key" ng-click="math(+)">+</button>
-            <button name="one" class="num-key" value="1" ng-click="updateOutput(1)">1</button>
-            <button name="two" class="num-key" value="2" ng-click="updateOutput(2)">2</button>
-            <button name="three" class="num-key" value="3" ng-click="updateOutput(3)">3</button>
-            <button name="equals" class="equals-key" ng-click="math(=)">=</button>
-            <button name="zero" class="zero-key" value="0" ng-click="updateOutput(0)">0</button>
-            <button name="dec" class="opp-key" ng-click="math(.)">.</button>
-          </div>
-        </div>
-      </div>
+  <div class="calc-top">
+    <p class="output" name="output">{{output}} {{operationSign}}</p>
+    <div class="keypad">
+      <button name="clear" class="opp-key" ng-click="clear()">C</button>
+      <button name="pos-neg" class="opp-key" ng-click="pos-neg()">+/-</button>
+      <button name="divide" class="opp-key" ng-click="math(/)">/</button>
+      <button name="multiply" class="opp-key" ng-click="math(*)">*</button>
+      <button name="seven" class="num-key" value="7" ng-click="updateOutput(7)">7</button>
+      <button name="eight" class="num-key" value="8" ng-click="updateOutput(8)">8</button>
+      <button name="nine" class="num-key" value="9" ng-click="updateOutput(9)">9</button>
+      <button name="subtract" class="opp-key" ng-click="math(-)">-</button>
+      <button name="four" class="num-key" value="4" ng-click="updateOutput(4)">4</button>
+      <button name="five" class="num-key" value="5" ng-click="updateOutput(5)">5</button>
+      <button name="six" class="num-key" value="6" ng-click="updateOutput(6)">6</button>
+      <button name="add" class="opp-key" ng-click="math(+)">+</button>
+      <button name="one" class="num-key" value="1" ng-click="updateOutput(1)">1</button>
+      <button name="two" class="num-key" value="2" ng-click="updateOutput(2)">2</button>
+      <button name="three" class="num-key" value="3" ng-click="updateOutput(3)">3</button>
+      <button name="equals" class="equals-key" ng-click="math(=)">=</button>
+      <button name="zero" class="zero-key" value="0" ng-click="updateOutput(0)">0</button>
+      <button name="dec" class="opp-key" ng-click="math(.)">.</button>
     </div>
-  </body>
+  </div>
 </div>
